@@ -1,0 +1,45 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/54d2ba9fe4b079f00fe9e06c/1512988632895-IZPCYI9E7WWYLHCAN2GM/IMG_0511.jpg?format=2500w');
+    background-size: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: brightness(85%)
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: white;
+    opacity: 50%;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: goldenrod;
+  }
+
+  .topnav a:last-child {
+    margin-left: auto;
+  }
+
+  .background-image1 {
+    width: 100%;
+    height: 735px;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/54d2ba9fe4b079f00fe9e06c/1512988632895-IZPCYI9E7WWYLHCAN2GM/IMG_0511.jpg?format=2500w');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(85%)
+  }
