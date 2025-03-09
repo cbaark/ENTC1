@@ -64,5 +64,22 @@
 
   .transition-2ndimg {
     text-align: center;
-   padding: 5% 
+    padding: 5% 
   }
+
+  .text-in-img2 {
+    text-align: center;
+    color:#ffffff;
+    z-index: 1;
+
+  } 
+
+  .background-image-second {
+    background-image:url("https://images.squarespace-cdn.com/content/v1/54d2ba9fe4b079f00fe9e06c/1423526095182-JXNUVRMCGSKW1577KJMO/BRI_5596.jpg?format=2500w");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    filter: brightness(90%);
+    z-index: -1;
+  } 
