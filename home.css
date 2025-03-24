@@ -1,14 +1,16 @@
 body {
-  padding-top: 60px; /* Adjust this value based on your navbar height */
+  padding-top: 72px; 
   margin: 0;
-  font-family: 'Poppins', sans-serif; /* Use your preferred font */
+  font-family: 'Poppins', sans-serif;
 }
+
+/* NAVIGATION BAR STYLES */
 .topnav {
   background-color: rgba(0, 0, 0, 0.8);
   height: auto;
   overflow: hidden;
   display: flex;
-  justify-content: space-between; /* Changed from flex-end to space-between */
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -16,10 +18,22 @@ body {
   right: 0;
   z-index: 1000;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.topnav a {
+.topnav .logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.topnav .nav-links {
+  display: flex;
+}
+
+.topnav .nav-links a {
   color: #ffffff;
   text-align: center;
   padding: 14px 16px;
@@ -28,148 +42,246 @@ body {
   transition: all 0.3s ease;
 }
 
-.topnav a:hover {
+.topnav .nav-links a:hover,
+.topnav .logo:hover {
   color: goldenrod;
   opacity: 1;
 }
 
-.topnav a.active {
+.topnav .nav-links a.active {
   color: goldenrod;
   font-weight: bold;
 }
 
-.topnav a:first-child {
-  margin-right: auto; /* Push the brand to the left */
-  font-size: 20px;
-  font-weight: bold;
+/* HERO SECTION STYLES*/
+.hero.background-image-first {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
 }
 
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-@media screen and (max-width: 600px) {
+.background-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.title-name h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.title-name h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.down-symbol {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.down-symbol.animate__animated {
+  animation-duration: 2s; 
+}
+
+/* TRANSITION STYLES*/
+.transition-2ndimg {
+  text-align: center;
+  padding: 5% 0;
+  background-color: #ffffff;
+}
+
+.transition-2ndimg h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin: 0;
+}
+
+/* SECOND BIMG STYLE*/
+.background-image-second {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/54d2ba9fe4b079f00fe9e06c/1423526095182-JXNUVRMCGSKW1577KJMO/BRI_5596.jpg?format=2500w");
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-in-img2 {
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+.text-in-img2 h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.background-image-second::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+.transition-3rdimg {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.transition-3rdimg p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* RESPONSIVE DESIGN SECTIONS*/
+@media screen and (max-width: 768px) {
   .topnav {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .topnav a {
+  .topnav .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topnav .nav-links a {
     width: 100%;
     text-align: left;
   }
 
-  .topnav a:last-child {
-    margin-right: 0;
-    order: -1; 
-  }
-}
-
-  .background-image-first {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .background-overlay img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7); /* Darken the image slightly */
-  }
-
-  .content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: white;
-    max-width: 800px;
-    padding: 20px;
-  }
-
   .title-name h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 3rem;
   }
 
   .title-name h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-  }
-
-  .down-symbol {
-    font-size: 3rem;
-    margin-top: 2rem;
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
-  }
-
-
-
-  .transition-2ndimg {
-    text-align: center;
-    padding: 5% 0;
-    background-color: #f8f8f8;
+    font-size: 1.5rem;
   }
 
   .transition-2ndimg h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin: 0;
-  }
-
-  .background-image-second {
-    background-image: url("https://images.squarespace-cdn.com/content/v1/54d2ba9fe4b079f00fe9e06c/1423526095182-JXNUVRMCGSKW1577KJMO/BRI_5596.jpg?format=2500w");
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .text-in-img2 {
-    text-align: center;
-    color: #ffffff;
-    z-index: 1;
-    position: relative;
+    font-size: 2rem;
   }
 
   .text-in-img2 h1 {
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-size: 2.5rem;
+  }
+}
+/* ANIMATION STYLES I HATE MY LIFE SO MUCH*/
+.animate__animated {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+.animate__fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animate__bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+.animate__infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
   }
 
-  .background-image-second::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.4);
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
 
