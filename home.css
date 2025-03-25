@@ -51,7 +51,17 @@ body {
 .topnav .nav-links a.active {
   color: goldenrod;
   font-weight: bold;
+  background-color: transparent; /* Override any background color */
 }
+
+/* Add this new rule to ensure our styles take precedence */
+.topnav .nav-links a.active:hover,
+.topnav .nav-links a.active:focus,
+.topnav .nav-links a.active:active {
+  color: goldenrod;
+  background-color: transparent;
+}
+
 
 /* HERO SECTION STYLES*/
 .hero.background-image-first {
@@ -283,5 +293,95 @@ body {
   90% {
     transform: translate3d(0, -4px, 0) scaleY(1.02);
   }
+}
+
+/* Slideshow styles */
+/* Slideshow styles */
+.slideshow-container {
+  max-width: 800px;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.mySlides {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left 0.5s ease-in-out;
+}
+
+.mySlides.active {
+  left: 0;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Navigation arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8);
+  text-decoration: none;  /* Remove underline */
+  display: flex;          /* Use flexbox for centering */
+  align-items: center;    /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  height: 50px;           /* Fixed height */
+  width: 50px;            /* Fixed width */
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Navigation dots */
+.dot-container {
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: rgba(187, 187, 187, 0.7);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.active, .dot:hover {
+  background-color: rgba(113, 113, 113, 0.9);
 }
 
