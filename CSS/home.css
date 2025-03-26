@@ -218,7 +218,7 @@ body {
     font-size: 2.5rem;
   }
 }
-/* ANIMATION STYLES I HATE MY LIFE SO MUCH*/
+/* ANIMATION STYLES TS PMO SO MUCH */
 .animate__animated {
   animation-duration: 4s;
   animation-fill-mode: both;
@@ -296,7 +296,6 @@ body {
 }
 
 /* Slideshow styles */
-/* Slideshow styles */
 .slideshow-container {
   max-width: 800px;
   width: 100%;
@@ -364,24 +363,107 @@ body {
 /* Navigation dots */
 .dot-container {
   text-align: center;
-  padding: 10px 0;
   position: absolute;
   bottom: 20px;
-  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 .dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background-color: rgba(187, 187, 187, 0.7);
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border: 2px solid #fff;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
-  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .active, .dot:hover {
-  background-color: rgba(113, 113, 113, 0.9);
+  background-color: #717171;
+  transform: scale(1.2);
+}
+
+/* Add a box shadow for better visibility */
+.dot {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Increase contrast for active and hovered dots */
+.active, .dot:hover {
+  background-color: #333;
+  border-color: #fff;
+}
+
+
+/* Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: goldenrod;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: goldenrod;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 

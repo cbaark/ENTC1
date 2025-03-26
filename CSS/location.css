@@ -1,0 +1,195 @@
+body {
+    padding-top: 72px; 
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* NAVIGATION BAR STYLES */
+  .topnav {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .topnav .logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .topnav .nav-links {
+    display: flex;
+  }
+
+  .topnav .nav-links a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+
+  .topnav .nav-links a.active {
+    color: goldenrod;
+    font-weight: bold;
+    background-color: transparent; /* Override any background color */
+    font-size: 17px; /* Ensure this matches the non-active font size */
+  }
+
+  /* Add this new rule to ensure our styles take precedence */
+  .topnav .nav-links a.active:hover,
+  .topnav .nav-links a.active:focus,
+  .topnav .nav-links a.active:active {
+    color: goldenrod;
+    background-color: transparent;
+    font-size: 17px; /* Ensure this matches the non-active font size */
+  }
+
+  /* HERO SECTION STYLES*/
+.hero.background-image-first {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+  }
+
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+  }
+
+  .background-overlay img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .title-name h1 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+
+  .down-symbol {
+    font-size: 5rem;
+    margin-top: 2rem;
+    border: #000;
+  }
+
+  .transition-2ndimg {
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+  }
+.location-info {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.address-container, .contact-container {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.address-container h3 {
+    font-weight: bold;
+}
+
+.contact-container h3 {
+    font-weight: bold;
+}
+
+.map-container {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.location-map {
+    width: 100%;
+    height: 400px;  
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.location-info h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.location-info p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.location-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.location-info a:hover {
+    color: #0056b3;
+}
+
+.location-info i {
+    margin-right: 10px;
+    color: #555;
+}
+
+@media (max-width: 992px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address-container, .contact-container, .map-container {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
