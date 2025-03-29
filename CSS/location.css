@@ -101,11 +101,22 @@ body {
   }
 
   .down-symbol {
-    font-size: 5rem;
-    margin-top: 2rem;
-    border: #000;
+    cursor: pointer;
+    font-size: 4rem;
+    animation: bounce 2s infinite;
   }
 
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+  }
   .transition-2ndimg {
     text-align: center;
     background-color: #ffffff;
@@ -114,8 +125,13 @@ body {
 .location-info {
     padding: 40px 20px;
     background-color: #f8f8f8;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
+.location-info.fade-in {
+    opacity: 1;
+}
 .info-container {
     display: flex;
     flex-wrap: wrap;
@@ -193,3 +209,77 @@ body {
     }
 }
 
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  color: goldenrod;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: goldenrod;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}

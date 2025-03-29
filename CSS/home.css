@@ -112,11 +112,21 @@ body {
 }
 
 .down-symbol {
-  font-size: 3rem;
-  margin-top: 2rem;
+    cursor: pointer;
+    font-size: 4rem;
+    animation: bounce 2s infinite;
 }
-.down-symbol.animate__animated {
-  animation-duration: 2s; 
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
 }
 
 /* TRANSITION STYLES*/
@@ -166,6 +176,16 @@ body {
   bottom: 0;
   background-color: rgba(0,0,0,0.4);
 }
+.transition-2ndimg,
+.transition-3rdimg,
+.transition-4thimg {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
 .transition-3rdimg {
     background-color: #f8f8f8;
     padding: 60px 20px;
@@ -212,6 +232,7 @@ body {
 
   .transition-2ndimg h2 {
     font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
   }
 
   .text-in-img2 h1 {
@@ -264,7 +285,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
-
+/* TODO: understand what the HELL this means bro and why this has to be done manually*/
 @keyframes bounce {
   from,
   20%,
@@ -340,12 +361,12 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
   background-color: rgba(0,0,0,0.8);
-  text-decoration: none;  /* Remove underline */
-  display: flex;          /* Use flexbox for centering */
-  align-items: center;    /* Vertical centering */
-  justify-content: center; /* Horizontal centering */
-  height: 50px;           /* Fixed height */
-  width: 50px;            /* Fixed width */
+  text-decoration: none; 
+  display: flex;         
+  align-items: center;   
+  justify-content: center;
+  height: 50px;          
+  width: 50px;            
 }
 
 .next {
@@ -386,18 +407,35 @@ body {
   transform: scale(1.2);
 }
 
-/* Add a box shadow for better visibility */
 .dot {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Increase contrast for active and hovered dots */
 .active, .dot:hover {
   background-color: #333;
   border-color: #fff;
 }
 
 
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
 /* Footer Styles */
 .site-footer {
     background-color: #333;
@@ -405,6 +443,7 @@ body {
     padding: 40px 0 20px;
     font-family: 'Poppins', sans-serif;
 }
+
 
 .footer-content {
     display: flex;
@@ -464,6 +503,73 @@ body {
     .footer-section {
         text-align: center;
         margin-bottom: 30px;
+    }
+}
+/* Review Section Styles */
+.review-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.review-stars {
+    font-size: 2em;
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+.review-stars .rating {
+    font-size: 0.7em;
+    color: #333;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.review-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.review-section p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.review-quote {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-quote i {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.review-quote p {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.review-quote .reviewer {
+    font-style: normal;
+    font-weight: bold;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .review-section {
+        text-align: center;
+    }
+
+    .review-quote {
+        margin-top: 30px;
     }
 }
 

@@ -1,0 +1,106 @@
+/* Import styles from home.css for consistency */
+@import url('../CSS/home.css');
+
+/* Additional styles for the contact page */
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-section .form-label {
+    font-weight: 600;
+}
+
+.contact-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.contact-section i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.map-container {
+    margin-top: 30px;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: goldenrod;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: goldenrod;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
