@@ -54,14 +54,6 @@ body {
   background-color: transparent; /* Override any background color */
 }
 
-/* Add this new rule to ensure our styles take precedence */
-.topnav .nav-links a.active:hover,
-.topnav .nav-links a.active:focus,
-.topnav .nav-links a.active:active {
-  color: goldenrod;
-  background-color: transparent;
-}
-
 
 /* HERO SECTION STYLES*/
 .hero.background-image-first {
@@ -131,6 +123,7 @@ body {
 
 /* TRANSITION STYLES*/
 .transition-2ndimg {
+  font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 5% 0;
   background-color: #ffffff;

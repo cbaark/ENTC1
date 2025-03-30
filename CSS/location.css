@@ -46,16 +46,6 @@ body {
     color: goldenrod;
     font-weight: bold;
     background-color: transparent; /* Override any background color */
-    font-size: 17px; /* Ensure this matches the non-active font size */
-  }
-
-  /* Add this new rule to ensure our styles take precedence */
-  .topnav .nav-links a.active:hover,
-  .topnav .nav-links a.active:focus,
-  .topnav .nav-links a.active:active {
-    color: goldenrod;
-    background-color: transparent;
-    font-size: 17px; /* Ensure this matches the non-active font size */
   }
 
   /* HERO SECTION STYLES*/
