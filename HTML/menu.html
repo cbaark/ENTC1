@@ -43,10 +43,9 @@
         <button class="filter-btn active" data-category="all">All Items</button>
         <button class="filter-btn" data-category="breakfast">Breakfast</button>
         <button class="filter-btn" data-category="lunch">Lunch</button>
-        <button class="filter-btn" data-category="coffee">Coffee</button>
-        <button class="filter-btn" data-category="tea">Tea</button>
+        <button class="filter-btn" data-category="hot-drinks">Hot Drinks</button>
+        <button class="filter-btn" data-category="cold-drinks">Cold Drinks</button>
         <button class="filter-btn" data-category="desserts">Desserts</button>
-        <button class="filter-btn" data-category="smoothies">Smoothies</button>
     </div>
     
     <div class="search-container">
@@ -273,258 +272,313 @@
             </div>
         </div>
         
-        <!-- Coffee Section -->
-        <div class="menu-section" id="coffee">
-            <h2>Coffee</h2>
+        <!-- Hot Drinks Section (replaces separate coffee and tea sections) -->
+        <div class="menu-section" id="hot-drinks">
+            <h2>Hot Drinks</h2>
             <div class="menu-items">
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Espresso</span>
-                        <span class="item-price">$3.50</span>
+                <!-- Coffee Items -->
+                <div class="menu-item" data-category="hot-drinks">
+                    <div class="category-label">Coffee</div>
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Espresso</span>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <p class="item-description">Double shot of our signature espresso blend.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                    <p class="item-description">Double shot of our signature espresso blend.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Americano</span>
+                            <span class="item-price">$3.95</span>
+                        </div>
+                        <p class="item-description">Double shot of espresso diluted with hot water.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Cappuccino</span>
+                            <span class="item-price">$4.50</span>
+                        </div>
+                        <p class="item-description">Equal parts espresso, steamed milk, and milk foam.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Latte</span>
+                            <span class="item-price">$4.95</span>
+                        </div>
+                        <p class="item-description">Espresso with steamed milk and a thin layer of foam.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Mocha</span>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                        <p class="item-description">Espresso with chocolate syrup, steamed milk, and whipped cream.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Caramel Macchiato</span>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                        <p class="item-description">Vanilla-infused milk marked with espresso and topped with caramel drizzle.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Cold Brew</span>
+                            <span class="item-price">$4.95</span>
+                        </div>
+                        <p class="item-description">Coffee brewed with cold water for 18 hours, resulting in a smooth, less acidic flavor.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Affogato</span>
+                            <span class="item-price">$5.95</span>
+                        </div>
+                        <p class="item-description">Scoop of vanilla gelato topped with a shot of hot espresso.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Vanilla Latte</span>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                        <p class="item-description">Espresso with steamed milk and house-made vanilla syrup.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Hazelnut Latte</span>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                        <p class="item-description">Espresso with steamed milk and hazelnut syrup.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Americano</span>
-                        <span class="item-price">$3.95</span>
+
+                <!-- Tea Items -->
+                <div class="menu-item" data-category="hot-drinks">
+                    <div class="category-label">Tea</div>
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Earl Grey</span>
+                            <span class="item-price">$3.95</span>
+                        </div>
+                        <p class="item-description">Classic black tea infused with bergamot oil.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                    <p class="item-description">Double shot of espresso diluted with hot water.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">English Breakfast</span>
+                            <span class="item-price">$3.95</span>
+                        </div>
+                        <p class="item-description">Robust blend of Assam and Ceylon black teas.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Cappuccino</span>
-                        <span class="item-price">$4.50</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Green Tea</span>
+                            <span class="item-price">$3.95</span>
+                        </div>
+                        <p class="item-description">Delicate Japanese Sencha green tea.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                    <p class="item-description">Equal parts espresso, steamed milk, and milk foam.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegetarian">Vegetarian</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Chamomile</span>
+                            <span class="item-price">$3.95</span>
+                        </div>
+                        <p class="item-description">Soothing herbal infusion with calming properties.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Latte</span>
-                        <span class="item-price">$4.95</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Chai Latte</span>
+                            <span class="item-price">$4.95</span>
+                        </div>
+                        <p class="item-description">Spiced black tea with steamed milk and honey.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                    <p class="item-description">Espresso with steamed milk and a thin layer of foam.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegetarian">Vegetarian</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Peppermint</span>
+                            <span class="item-price">$3.95</span>
+                        </div>
+                        <p class="item-description">Refreshing herbal tea with a cooling finish.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Mocha</span>
-                        <span class="item-price">$5.50</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Rooibos</span>
+                            <span class="item-price">$3.95</span>
+                        </div>
+                        <p class="item-description">Caffeine-free South African red bush tea with a naturally sweet taste.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegan">Vegan</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                    <p class="item-description">Espresso with chocolate syrup, steamed milk, and whipped cream.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegetarian">Vegetarian</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">Matcha Latte</span>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                        <p class="item-description">Stone-ground Japanese green tea powder whisked with steamed milk.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Caramel Macchiato</span>
-                        <span class="item-price">$5.50</span>
-                    </div>
-                    <p class="item-description">Vanilla-infused milk marked with espresso and topped with caramel drizzle.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegetarian">Vegetarian</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Cold Brew</span>
-                        <span class="item-price">$4.95</span>
-                    </div>
-                    <p class="item-description">Coffee brewed with cold water for 18 hours, resulting in a smooth, less acidic flavor.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Affogato</span>
-                        <span class="item-price">$5.95</span>
-                    </div>
-                    <p class="item-description">Scoop of vanilla gelato topped with a shot of hot espresso.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegetarian">Vegetarian</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Vanilla Latte</span>
-                        <span class="item-price">$5.50</span>
-                    </div>
-                    <p class="item-description">Espresso with steamed milk and house-made vanilla syrup.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegetarian">Vegetarian</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="coffee">
-                    <div class="item-header">
-                        <span class="item-name">Hazelnut Latte</span>
-                        <span class="item-price">$5.50</span>
-                    </div>
-                    <p class="item-description">Espresso with steamed milk and hazelnut syrup.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegetarian">Vegetarian</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    
+                    <div class="menu-item" data-category="hot-drinks">
+                        <div class="item-header">
+                            <span class="item-name">London Fog</span>
+                            <span class="item-price">$4.95</span>
+                        </div>
+                        <p class="item-description">Earl Grey tea with vanilla syrup and steamed milk.</p>
+                        <div class="dietary-info">
+                            <span class="dietary-tag vegetarian">Vegetarian</span>
+                            <span class="dietary-tag gluten-free">Gluten-Free</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Tea Section -->
-        <div class="menu-section" id="tea">
-            <h2>Tea</h2>
+
+        <!-- Cold Drinks Section -->
+        <div class="menu-section" id="cold-drinks">
+            <h2>Cold Drinks</h2>
             <div class="menu-items">
-                <div class="menu-item" data-category="tea">
+                <div class="menu-item" data-category="cold-drinks">
                     <div class="item-header">
-                        <span class="item-name">Earl Grey</span>
-                        <span class="item-price">$3.95</span>
-                    </div>
-                    <p class="item-description">Classic black tea infused with bergamot oil.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="tea">
-                    <div class="item-header">
-                        <span class="item-name">English Breakfast</span>
-                        <span class="item-price">$3.95</span>
-                    </div>
-                    <p class="item-description">Robust blend of Assam and Ceylon black teas.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="tea">
-                    <div class="item-header">
-                        <span class="item-name">Green Tea</span>
-                        <span class="item-price">$3.95</span>
-                    </div>
-                    <p class="item-description">Delicate Japanese Sencha green tea.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="tea">
-                    <div class="item-header">
-                        <span class="item-name">Chamomile</span>
-                        <span class="item-price">$3.95</span>
-                    </div>
-                    <p class="item-description">Soothing herbal infusion with calming properties.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="tea">
-                    <div class="item-header">
-                        <span class="item-name">Chai Latte</span>
+                        <span class="item-name">Iced Coffee</span>
                         <span class="item-price">$4.95</span>
                     </div>
-                    <p class="item-description">Spiced black tea with steamed milk and honey.</p>
+                    <p class="item-description">Double shot espresso over ice with milk and optional syrup.</p>
                     <div class="dietary-info">
                         <span class="dietary-tag vegetarian">Vegetarian</span>
                         <span class="dietary-tag gluten-free">Gluten-Free</span>
                     </div>
                 </div>
-                
-                <div class="menu-item" data-category="tea">
+
+                <div class="menu-item" data-category="cold-drinks">
                     <div class="item-header">
-                        <span class="item-name">Peppermint</span>
-                        <span class="item-price">$3.95</span>
-                    </div>
-                    <p class="item-description">Refreshing herbal tea with a cooling finish.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="tea">
-                    <div class="item-header">
-                        <span class="item-name">Rooibos</span>
-                        <span class="item-price">$3.95</span>
-                    </div>
-                    <p class="item-description">Caffeine-free South African red bush tea with a naturally sweet taste.</p>
-                    <div class="dietary-info">
-                        <span class="dietary-tag vegan">Vegan</span>
-                        <span class="dietary-tag gluten-free">Gluten-Free</span>
-                    </div>
-                </div>
-                
-                <div class="menu-item" data-category="tea">
-                    <div class="item-header">
-                        <span class="item-name">Matcha Latte</span>
+                        <span class="item-name">Iced Latte</span>
                         <span class="item-price">$5.50</span>
                     </div>
-                    <p class="item-description">Stone-ground Japanese green tea powder whisked with steamed milk.</p>
+                    <p class="item-description">Chilled espresso and milk over ice.</p>
                     <div class="dietary-info">
                         <span class="dietary-tag vegetarian">Vegetarian</span>
                         <span class="dietary-tag gluten-free">Gluten-Free</span>
                     </div>
                 </div>
-                
-                <div class="menu-item" data-category="tea">
+
+                <div class="menu-item" data-category="cold-drinks">
+                    <div class="item-header">
+                        <span class="item-name">Frappe</span>
+                        <span class="item-price">$6.50</span>
+                    </div>
+                    <p class="item-description">Blended coffee drink with ice, milk, and whipped cream.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cold-drinks">
                     <div class="item-header">
                         <span class="item-name">Iced Tea</span>
-                        <span class="item-price">$3.50</span>
+                        <span class="item-price">$4.50</span>
                     </div>
-                    <p class="item-description">House-brewed black tea served over ice with optional lemon.</p>
+                    <p class="item-description">House-brewed black tea over ice with optional lemon.</p>
                     <div class="dietary-info">
                         <span class="dietary-tag vegan">Vegan</span>
                         <span class="dietary-tag gluten-free">Gluten-Free</span>
                     </div>
                 </div>
-                
-                <div class="menu-item" data-category="tea">
+
+                <div class="menu-item" data-category="cold-drinks">
                     <div class="item-header">
-                        <span class="item-name">London Fog</span>
+                        <span class="item-name">Fresh Lemonade</span>
                         <span class="item-price">$4.95</span>
                     </div>
-                    <p class="item-description">Earl Grey tea with vanilla syrup and steamed milk.</p>
+                    <p class="item-description">House-made lemonade with fresh lemons and mint.</p>
                     <div class="dietary-info">
-                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag vegan">Vegan</span>
                         <span class="dietary-tag gluten-free">Gluten-Free</span>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Desserts Section -->
         <div class="menu-section" id="desserts">
             <h2>Desserts</h2>

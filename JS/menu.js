@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search-input');
     const downSymbol = document.querySelector('.down-symbol');
 
+    const validCategories = ['all', 'breakfast', 'lunch', 'hot-drinks', 'cold-drinks', 'desserts'];
+
     // Filter functionality
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -20,6 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';
+                }
+            });
+
+            // Highlight active section
+            document.querySelectorAll('.menu-section').forEach(section => {
+                if (category === 'all' || section.id === category) {
+                    section.style.opacity = '1';
+                } else {
+                    section.style.opacity = '0.5';
                 }
             });
         });
@@ -38,6 +49,11 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 item.style.display = 'none';
             }
+        });
+
+        // Reset section highlighting on search
+        document.querySelectorAll('.menu-section').forEach(section => {
+            section.style.opacity = '1';
         });
     });
 
