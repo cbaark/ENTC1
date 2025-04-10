@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Platform No.5 - Menu</title>
+        <link rel="stylesheet" href="../CSS/menu.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <nav class="topnav">
+            <a href="home.html" class="logo">Platform No.5</a>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <a class="active" href="menu.html">Menu</a>
+                <a href="team.html">Team</a>
+                <a href="history.html">History</a>
+                <a href="events.html">Events</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero background-image-first">
+            <div class="background-overlay">
+                <img src="../IMAGES/PN5_storefrontfar.jpg" alt="Background Image">
+            </div>
+            <div class="content">
+                <div class="title-name">
+                    <h1 class="animate__animated animate__fadeInDown">Our Menu</h1>
+                    <div class="down-symbol">&#11167;</div>
+                </div>
+            </div>
+        </section>
+
+    <div class="filter-container">
+        <button class="filter-btn active" data-category="all">All Items</button>
+        <button class="filter-btn" data-category="breakfast">Breakfast</button>
+        <button class="filter-btn" data-category="lunch">Lunch</button>
+        <button class="filter-btn" data-category="coffee">Coffee</button>
+        <button class="filter-btn" data-category="tea">Tea</button>
+        <button class="filter-btn" data-category="desserts">Desserts</button>
+        <button class="filter-btn" data-category="smoothies">Smoothies</button>
+    </div>
+    
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search menu...">
+    </div>
+    
+    <div id="menu-container">
+        <!-- Breakfast Section -->
+        <div class="menu-section" id="breakfast">
+            <h2>Breakfast</h2>
+            <div class="menu-items">
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Avocado Toast</span>
+                        <span class="item-price">$9.95</span>
+                    </div>
+                    <p class="item-description">Smashed avocado on artisanal sourdough with cherry tomatoes, microgreens, and a hint of lemon.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Classic Eggs Benedict</span>
+                        <span class="item-price">$12.50</span>
+                    </div>
+                    <p class="item-description">Poached eggs and Canadian bacon on an English muffin topped with hollandaise sauce.</p>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Blueberry Pancake Stack</span>
+                        <span class="item-price">$11.95</span>
+                    </div>
+                    <p class="item-description">Fluffy pancakes studded with fresh blueberries, served with maple syrup and whipped butter.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Farmer's Breakfast Bowl</span>
+                        <span class="item-price">$13.95</span>
+                    </div>
+                    <p class="item-description">Scrambled eggs, roasted potatoes, bell peppers, sausage, and cheddar cheese served in a bowl.</p>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Vegan Breakfast Burrito</span>
+                        <span class="item-price">$10.95</span>
+                    </div>
+                    <p class="item-description">Scrambled tofu, black beans, avocado, and vegan cheese wrapped in a spinach tortilla.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Greek Yogurt Parfait</span>
+                        <span class="item-price">$7.95</span>
+                    </div>
+                    <p class="item-description">Creamy Greek yogurt with honey, house-made granola, and seasonal fresh fruits.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Smoked Salmon Bagel</span>
+                        <span class="item-price">$13.50</span>
+                    </div>
+                    <p class="item-description">Toasted bagel with cream cheese, smoked salmon, capers, red onion, and fresh dill.</p>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Mushroom & Spinach Frittata</span>
+                        <span class="item-price">$11.95</span>
+                    </div>
+                    <p class="item-description">Open-faced Italian-style omelet with sautéed mushrooms, spinach, and goat cheese.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Brioche French Toast</span>
+                        <span class="item-price">$10.95</span>
+                    </div>
+                    <p class="item-description">Thick-cut brioche bread soaked in a vanilla-cinnamon custard, grilled to perfection.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <div class="item-header">
+                        <span class="item-name">Breakfast Sandwich</span>
+                        <span class="item-price">$8.95</span>
+                    </div>
+                    <p class="item-description">Fried egg, cheddar cheese, and bacon on a toasted English muffin.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lunch Section -->
+        <div class="menu-section" id="lunch">
+            <h2>Lunch</h2>
+            <div class="menu-items">
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Caprese Panini</span>
+                        <span class="item-price">$11.95</span>
+                    </div>
+                    <p class="item-description">Fresh mozzarella, tomatoes, basil, and balsamic glaze on pressed ciabatta bread.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Quinoa Power Bowl</span>
+                        <span class="item-price">$13.95</span>
+                    </div>
+                    <p class="item-description">Protein-packed quinoa with roasted vegetables, chickpeas, avocado, and tahini dressing.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Turkey Club Sandwich</span>
+                        <span class="item-price">$12.50</span>
+                    </div>
+                    <p class="item-description">Roasted turkey breast, bacon, lettuce, tomato, and herb aioli on toasted whole grain bread.</p>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Mediterranean Salad</span>
+                        <span class="item-price">$10.95</span>
+                    </div>
+                    <p class="item-description">Mixed greens, cucumber, cherry tomatoes, Kalamata olives, feta cheese, and red onion with Greek dressing.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Chicken Pesto Wrap</span>
+                        <span class="item-price">$11.95</span>
+                    </div>
+                    <p class="item-description">Grilled chicken, pesto, roasted red peppers, and mozzarella in a spinach wrap.</p>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Tomato Basil Soup</span>
+                        <span class="item-price">$6.95</span>
+                    </div>
+                    <p class="item-description">Creamy tomato soup with fresh basil and a touch of cream, served with a slice of garlic bread.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Southwest Black Bean Burger</span>
+                        <span class="item-price">$12.95</span>
+                    </div>
+                    <p class="item-description">House-made black bean patty with avocado, pico de gallo, and chipotle mayo on a brioche bun.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Spicy Tuna Poke Bowl</span>
+                        <span class="item-price">$14.95</span>
+                    </div>
+                    <p class="item-description">Sushi-grade tuna, cucumber, edamame, avocado, and seaweed salad over brown rice with sriracha mayo.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Artisan Cheese Plate</span>
+                        <span class="item-price">$14.95</span>
+                    </div>
+                    <p class="item-description">Selection of three artisanal cheeses with fruit, nuts, honey, and crackers.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="lunch">
+                    <div class="item-header">
+                        <span class="item-name">Roasted Beet Salad</span>
+                        <span class="item-price">$11.95</span>
+                    </div>
+                    <p class="item-description">Roasted red and golden beets with goat cheese, arugula, and candied walnuts in balsamic vinaigrette.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Coffee Section -->
+        <div class="menu-section" id="coffee">
+            <h2>Coffee</h2>
+            <div class="menu-items">
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Espresso</span>
+                        <span class="item-price">$3.50</span>
+                    </div>
+                    <p class="item-description">Double shot of our signature espresso blend.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Americano</span>
+                        <span class="item-price">$3.95</span>
+                    </div>
+                    <p class="item-description">Double shot of espresso diluted with hot water.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Cappuccino</span>
+                        <span class="item-price">$4.50</span>
+                    </div>
+                    <p class="item-description">Equal parts espresso, steamed milk, and milk foam.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Latte</span>
+                        <span class="item-price">$4.95</span>
+                    </div>
+                    <p class="item-description">Espresso with steamed milk and a thin layer of foam.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Mocha</span>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <p class="item-description">Espresso with chocolate syrup, steamed milk, and whipped cream.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Caramel Macchiato</span>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <p class="item-description">Vanilla-infused milk marked with espresso and topped with caramel drizzle.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Cold Brew</span>
+                        <span class="item-price">$4.95</span>
+                    </div>
+                    <p class="item-description">Coffee brewed with cold water for 18 hours, resulting in a smooth, less acidic flavor.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Affogato</span>
+                        <span class="item-price">$5.95</span>
+                    </div>
+                    <p class="item-description">Scoop of vanilla gelato topped with a shot of hot espresso.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Vanilla Latte</span>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <p class="item-description">Espresso with steamed milk and house-made vanilla syrup.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Hazelnut Latte</span>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <p class="item-description">Espresso with steamed milk and hazelnut syrup.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tea Section -->
+        <div class="menu-section" id="tea">
+            <h2>Tea</h2>
+            <div class="menu-items">
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">Earl Grey</span>
+                        <span class="item-price">$3.95</span>
+                    </div>
+                    <p class="item-description">Classic black tea infused with bergamot oil.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">English Breakfast</span>
+                        <span class="item-price">$3.95</span>
+                    </div>
+                    <p class="item-description">Robust blend of Assam and Ceylon black teas.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">Green Tea</span>
+                        <span class="item-price">$3.95</span>
+                    </div>
+                    <p class="item-description">Delicate Japanese Sencha green tea.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">Chamomile</span>
+                        <span class="item-price">$3.95</span>
+                    </div>
+                    <p class="item-description">Soothing herbal infusion with calming properties.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">Chai Latte</span>
+                        <span class="item-price">$4.95</span>
+                    </div>
+                    <p class="item-description">Spiced black tea with steamed milk and honey.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">Peppermint</span>
+                        <span class="item-price">$3.95</span>
+                    </div>
+                    <p class="item-description">Refreshing herbal tea with a cooling finish.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">Rooibos</span>
+                        <span class="item-price">$3.95</span>
+                    </div>
+                    <p class="item-description">Caffeine-free South African red bush tea with a naturally sweet taste.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">Matcha Latte</span>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <p class="item-description">Stone-ground Japanese green tea powder whisked with steamed milk.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">Iced Tea</span>
+                        <span class="item-price">$3.50</span>
+                    </div>
+                    <p class="item-description">House-brewed black tea served over ice with optional lemon.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegan">Vegan</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="item-header">
+                        <span class="item-name">London Fog</span>
+                        <span class="item-price">$4.95</span>
+                    </div>
+                    <p class="item-description">Earl Grey tea with vanilla syrup and steamed milk.</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag vegetarian">Vegetarian</span>
+                        <span class="dietary-tag gluten-free">Gluten-Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Desserts Section -->
+        <div class="menu-section" id="desserts">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item" data-category="desserts">
+                    <div class="item-header">
+                        <span class="item-name">Tiramisu</span>
+                        <span class="item-price">$6.95</span>
+                    </div>
+                    <p class="item-description">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                    <div class="dietary-info">
+                        <span class></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Phone: (04) 9605 6696</p>
+                <p>Email: platformno5sggroups@gmail.com</p>
+                <p>PR & Marketing: platformno5marketing@gmail.com</p>
+            </div>
+            <div class="footer-section address">
+                <h3>Visit Us</h3>
+                <p>Platform No.5</p>
+                <p>Shop 2, 104 Railway Parade, Glenfield, Sydney, NSW, Australia</p>
+            </div>
+            <div class="footer-section hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 6am - 3:30pm</p>
+                <p>Saturday - Sunday: 8am - 1:30pm</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cafeglenfield" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/platformno5/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://heyyou.com.au/restaurant/4023/platform-no5" target="_blank"><i class="fas fa-mug-hot"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Platform No.5. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/menu.js"></script>
+</body>
+</html>

@@ -101,7 +101,7 @@ body {
 }
 
 .down-symbol {
-    font-size: 2rem;
+    font-size: 4rem;
     animation: bounce 2s infinite;
 }
 
@@ -288,6 +288,7 @@ body {
 .footer-section h3 {
     margin-bottom: 15px;
     font-size: 1.2rem;
+    color: goldenrod;
 }
 
 .social-icons a {
@@ -298,7 +299,7 @@ body {
 }
 
 .social-icons a:hover {
-    color: #4CAF50;
+    color: goldenrod;
 }
 
 .footer-bottom {
