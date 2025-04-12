@@ -6,15 +6,6 @@
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Business Information](#business-information)
-- [Project Structure](#project-structure)
-- [Technologies](#technologies)
-- [Credits](#credits)
-
 ## Overview
 
 The **Platform No.5 Cafe Website** is a multi-page promotional website created as part of the Year 11 2025 Interactive Media & UX Design assessment. It showcases the offerings, ambiance, and services of Platform No.5, a cozy cafe located near Glenfield Train Station.
