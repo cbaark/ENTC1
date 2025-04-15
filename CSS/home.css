@@ -52,7 +52,7 @@ body {
   color: goldenrod;
   font-weight: bold;
   font-size: 17px;
-  background-color: transparent; /* Override any background color */
+  background-color: transparent; 
 }
 
 
@@ -233,7 +233,7 @@ body {
     font-size: 2.5rem;
   }
 }
-/* ANIMATION STYLES TS PMO SO MUCH */
+/* ANIMATION STYLES */
 .animate__animated {
   animation-duration: 4s;
   animation-fill-mode: both;
@@ -255,6 +255,8 @@ body {
 .animate__infinite {
   animation-iteration-count: infinite;
 }
+
+/* i hated this*/
 
 @keyframes fadeInDown {
   from {
@@ -279,7 +281,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
-/* TODO: understand what the HELL this means bro and why this has to be done manually*/
+/* yeah i hate this as well*/
 @keyframes bounce {
   from,
   20%,
@@ -433,59 +435,73 @@ body {
 
 /* Footer Styles */
 .site-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0 20px;
-    font-family: 'Poppins', sans-serif;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
-
 .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-section {
-    flex: 1;
-    margin-bottom: 20px;
-    min-width: 200px;
+  flex: 1;
+  margin-bottom: 20px;
+  min-width: 200px;
 }
 
 .footer-section h3 {
-    color: goldenrod;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+  color: goldenrod;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 
 .footer-section p {
-    margin-bottom: 10px;
-    font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
 }
 
 .social-icons a {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 15px;
-    transition: color 0.3s ease;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 .footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    margin-top: 20px;
-    border-top: 1px solid #555;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #555;
 }
 
 .footer-bottom p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
+}
+
+/* Footer Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      text-align: center;
+      margin-bottom: 30px;
+      width: 100%;
+      padding: 0 20px;
+  }
 }
 
 /* Responsive adjustments */
