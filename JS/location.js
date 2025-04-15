@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(backToTopButton);
 
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 700) {
             backToTopButton.style.display = 'block';
         } else {
             backToTopButton.style.display = 'none';

@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Back to top button (same as in home.js)
+    // Back to top button
     const backToTopButton = document.createElement('button');
     backToTopButton.innerHTML = '⮝';
     backToTopButton.className = 'back-to-top';
     document.body.appendChild(backToTopButton);
 
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 600) {
             backToTopButton.style.display = 'block';
         } else {
             backToTopButton.style.display = 'none';

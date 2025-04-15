@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all elements
+    // get all elements
     const filterBtns = document.querySelectorAll('.filter-btn');
     const menuItems = document.querySelectorAll('.menu-item');
     const searchInput = document.getElementById('search-input');
@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const validCategories = ['all', 'breakfast', 'lunch', 'hot-drinks', 'cold-drinks', 'desserts'];
 
-    // Filter functionality
+    // filter functionality
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active class from all buttons
+            // remove active class 
             filterBtns.forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
+            // add active class 
             btn.classList.add('active');
             
             const category = btn.getAttribute('data-category');
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // Highlight active section
+            // highlight active section
             document.querySelectorAll('.menu-section').forEach(section => {
                 if (category === 'all' || section.id === category) {
                     section.style.opacity = '1';
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Reset section highlighting on search
+        // reset section highlighting when search
         document.querySelectorAll('.menu-section').forEach(section => {
             section.style.opacity = '1';
         });
@@ -64,4 +64,21 @@ document.addEventListener('DOMContentLoaded', function() {
             filterContainer.scrollIntoView({ behavior: 'smooth' });
         });
     }
+    // BAck to top button
+    const backToTopButton = document.createElement('button');
+    backToTopButton.innerHTML = '⮝';
+    backToTopButton.className = 'back-to-top';
+    document.body.appendChild(backToTopButton);
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 1350) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
