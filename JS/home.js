@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Fade in effect for sections
-    // Fade in effect for sections
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
