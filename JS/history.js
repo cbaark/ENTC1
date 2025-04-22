@@ -1,45 +1,46 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll for down arrow
     const downArrowElement = document.querySelector('.down-symbol');
-
     if (downArrowElement) {
         downArrowElement.addEventListener('click', function(event) {
-            event.preventDefault(); 
-            const timelineSectionElement = document.querySelector('.timeline-section');
+            event.preventDefault();
+            const timelineSectionElement = document.querySelector('.history-section');
             if (timelineSectionElement) {
                 timelineSectionElement.scrollIntoView({ behavior: 'smooth' });
             }
         });
     }
 
+    // Reveal timeline events on scroll
     const timelineItemObserver = new IntersectionObserver((entries) => {
         entries.forEach(timelineEntry => {
-            // Check if the timeline item is in the viewport
             if (timelineEntry.isIntersecting) {
-                // Animate the timeline item by setting its opacity and transform
                 timelineEntry.target.style.opacity = '1';
                 timelineEntry.target.style.transform = 'translateY(0)';
             }
         });
-    }, { threshold: 0.1 }); 
+    }, { threshold: 0.1 });
 
-    document.querySelectorAll('.timeline-item').forEach(timelineItem => {
-
+    document.querySelectorAll('.timeline-event').forEach(timelineItem => {
         timelineItem.style.opacity = '0';
         timelineItem.style.transform = 'translateY(20px)';
-
         timelineItemObserver.observe(timelineItem);
     });
 
-    const backToTopButtonElement = document.createElement('button');
-    backToTopButtonElement.innerHTML = '⮝'; 
-    backToTopButtonElement.className = 'back-to-top'; 
-    document.body.appendChild(backToTopButtonElement); 
+    const backToTopButton = document.createElement('button');
+    backToTopButton.innerHTML = '⮝';
+    backToTopButton.className = 'back-to-top';
+    document.body.appendChild(backToTopButton);
 
     window.addEventListener('scroll', () => {
-        backToTopButtonElement.style.display = window.pageYOffset > 300 ? 'block' : 'none';
-    });   // end
+        if (window.pageYOffset > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
 
-    backToTopButtonElement.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
